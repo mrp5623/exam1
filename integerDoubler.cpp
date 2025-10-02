@@ -12,6 +12,7 @@ void integerDoubler(std::string inputFile, std::string outputFile){
         input.read(reinterpret_cast<char*>(&n), sizeof(n));
         doubled.push_back(n);
     }
+    doubled.pop_back();
 
     input.close();
 
